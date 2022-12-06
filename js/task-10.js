@@ -9,7 +9,8 @@ const refs = {
   boxRef: document.querySelector("#boxes"),
 };
 
-const createBoxes = function (amount = refs.inputRef.value) {
+const createBoxes = function (amount) {
+  amount = refs.inputRef.value;
   let baseBoxSize = 30;
   const markup = [];
 
